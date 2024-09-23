@@ -49,9 +49,11 @@
 
     <script>
       window.onload = async function () {
-        // Extract the ID from the URL path
-        const pathParts = window.location.pathname.split("/");
-        const id = pathParts[pathParts.length - 1]; // Get the last part of the URL, which should be the unique ID
+        // Extract the ID from the URL path (e.g., /birthday.html?id=123)
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Get the ID from the URL
+        const id = urlParams.get("id");
 
         console.log(id);
 

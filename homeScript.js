@@ -3,6 +3,9 @@ async function handleFormSubmission(event) {
   event.preventDefault();
   const formData = new FormData(this);
 
+  // Show "Wait..." and disable the button
+  showLoadingState();
+
   try {
     const response = await fetch(
       "https://birthday-gift-api.vercel.app/api/generate",
@@ -23,21 +26,40 @@ async function handleFormSubmission(event) {
       displayGeneratedLink(link);
     } else {
       alert("Failed to generate link. Please try again.");
+      resetGenerateLinkButton();
     }
   } catch (error) {
     console.error("Error:", error);
     alert("An error occurred while generating the link.");
+    resetGenerateLinkButton();
   }
 }
 
-// Function to disable the Generate Link button
+// Function to show the loading state on the button
+function showLoadingState() {
+  const generateButton = document.querySelector("button[type=submit]");
+  generateButton.disabled = true;
+  generateButton.textContent = "Wait...";
+  generateButton.style.backgroundColor = "#f0ad4e"; // Optional: Change color to indicate waiting
+  generateButton.style.cursor = "default";
+}
+
+// Function to disable the Generate Link button once the link is generated
 function disableGenerateLinkButton() {
-  document.querySelector("button[type=submit]").disabled = true;
-  document.querySelector("button[type=submit]").textContent =
-    "Link Generated! 🎉";
-  document.querySelector("button[type=submit]").style.backgroundColor =
-    "#4CAF50";
-  document.querySelector("button[type=submit]").style.cursor = "default";
+  const generateButton = document.querySelector("button[type=submit]");
+  generateButton.disabled = true;
+  generateButton.textContent = "Link Generated! 🎉";
+  generateButton.style.backgroundColor = "#4CAF50";
+  generateButton.style.cursor = "default";
+}
+
+// Function to reset the Generate Link button if an error occurs
+function resetGenerateLinkButton() {
+  const generateButton = document.querySelector("button[type=submit]");
+  generateButton.disabled = false;
+  generateButton.textContent = "Generate Link 🚀";
+  generateButton.style.backgroundColor = "#b8885a"; // Original button color
+  generateButton.style.cursor = "pointer";
 }
 
 // Function to display the generated link

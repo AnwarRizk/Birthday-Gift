@@ -53,6 +53,8 @@
         const pathParts = window.location.pathname.split("/");
         const id = pathParts[pathParts.length - 1]; // Get the last part of the URL, which should be the unique ID
 
+        console.log(id);
+
         // Check if the ID is valid
         if (!id || id === "undefined") {
           document.body.innerHTML = "<h2>Invalid birthday details!</h2>";

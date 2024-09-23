@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Birthday Gift</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="homeStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1>Birthday Gift 🙈</h1>
+
+    <form class="form-container" id="birthdayForm">
+      <label for="friendName">Enter your friend's name:</label>
+      <input
+        type="text"
+        name="friendName"
+        id="friendName"
+        placeholder="Your friend's name"
+        required
+      />
+
+      <label for="friendImage">Upload your friend's image:</label>
+      <input type="file" name="friendImage" id="friendImage" required />
+
+      <label for="senderName">Enter your name:</label>
+      <input
+        type="text"
+        name="senderName"
+        id="senderName"
+        placeholder="Your name"
+        required
+      />
+
+      <button type="submit">Generate Link 🚀</button>
+
+      <div id="generatedLinkContainer">
+        <p class="share-note">
+          Share this link 👇🏻 with your friend to see the birthday gift 🎁
+        </p>
+        <input type="text" id="generatedLink" readonly />
+        <p class="expire-note">NOTE: this link will expire in 3 days.</p>
+        <div class="button-group">
+          <button id="copyLinkButton" class="copy" title="Click to copy">
+            Copy Link 📋
+          </button>
+          <button id="visitLinkButton" title="Click to visit page">
+            Show Result 👀
+          </button>
+        </div>
+      </div>
+
+      <i
+        id="whatsapp"
+        class="fa-brands fa-whatsapp"
+        title="Share to whatsapp"
+      ></i>
+    </form>
+
+    <footer class="copyright">
+      <p>
+        &copy; 2024 -
+        <a href="https://anwar-rizk.netlify.app/" target="_blank">Anwar Rizk</a>
+      </p>
+    </footer>
+
+    <script src="homeScript.js"></script>
+  </body>
+</html>

@@ -4,7 +4,7 @@
     <title>Happy Birthday</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="header">
@@ -42,7 +42,7 @@
 
     <footer class="copyright">
       <p>
-        &copy; 2023 -
+        &copy; 2024 -
         <a href="https://anwar-rizk.netlify.app/" target="_blank">Anwar Rizk</a>
       </p>
     </footer>
@@ -86,7 +86,7 @@
           document.getElementById("birthdayImage").src =
             imageUrl || "default-image.jpg";
 
-          const wishingText = `I wish you a year full of joy, happiness, and success. May all your wishes come true. Happy Birthday, ${friendName} 🎂 from ${senderName}`;
+          const wishingText = `I wish you a year full of joy, happiness, and success. May all your wishes come true. Happy Birthday, ${friendName} 🎂\n\nfrom: ${senderName}`;
           document.getElementById("wishingText").textContent = wishingText;
         } catch (err) {
           console.error(err);

@@ -1,0 +1,162 @@
+body {
+  background-color: #d4c9bd;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #333333;
+  margin-top: 20px;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #ccb69f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="file"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #303030;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#generatedLinkContainer {
+  display: none;
+  margin-top: 20px;
+}
+
+#generatedLink {
+  background-color: #ffffff91;
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #303030;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  display: inline-block;
+  background-color: #b8885a;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+button:hover {
+  background-color: #a77b4f;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
+#visitLinkButton {
+  background-color: #ff6b17;
+}
+
+#visitLinkButton:hover {
+  background-color: #e65a0f;
+}
+
+#copyLinkButton {
+  background-color: #ffcd88b0;
+  color: #333333;
+}
+
+#copyLinkButton:hover {
+  background-color: #e4b778;
+}
+
+#whatsapp {
+  display: none;
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #41ac64;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  width: 30%;
+  border: 2px solid #303030;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#whatsapp:hover {
+  color: #333333;
+}
+
+.share-note {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.expire-note {
+  font-size: 16px;
+  margin: 0;
+  color: darkred;
+}
+
+.copy {
+  position: relative;
+}
+
+.copy.active::before {
+  content: "Copied to clipboard!";
+  width: 140px;
+  position: absolute;
+  top: -33px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #5b5858ab;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  z-index: 10;
+}
+
+.copy::before {
+  display: none;
+}
+
+.copyright {
+  margin-top: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  color: #000000;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: underline;
+  color: #434344fc;
+}

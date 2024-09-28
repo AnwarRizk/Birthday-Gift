@@ -22,10 +22,12 @@ async function handleFormSubmission(event) {
       // Disable the Generate Link button and change its background color
       disableGenerateLinkButton();
 
-      // Display the generated link
+      // Hide input section and Display the generated link
       displayGeneratedLink(link);
     } else {
-      alert("Failed to generate link. Please try again.");
+      const errorMessage =
+        (await response.text()) || "Failed to generate link. Please try again.";
+      alert(errorMessage);
       resetGenerateLinkButton();
     }
   } catch (error) {
@@ -35,11 +37,12 @@ async function handleFormSubmission(event) {
   }
 }
 
-// Function to show the loading state on the button
+// Function to show the loading state on the button with a spinner
 function showLoadingState() {
   const generateButton = document.querySelector("button[type=submit]");
   generateButton.disabled = true;
-  generateButton.textContent = "Wait...";
+  generateButton.innerHTML = 'Wait <span class="spinner"></span>'; // Add spinner HTML
+  //   generateButton.style.height = "40px"; // Optional: Increase height to fit the spinner
   generateButton.style.backgroundColor = "#f0ad4e"; // Optional: Change color to indicate waiting
   generateButton.style.cursor = "default";
 }
@@ -64,6 +67,8 @@ function resetGenerateLinkButton() {
 
 // Function to display the generated link
 function displayGeneratedLink(link) {
+  const inputSection = document.querySelector(".input-section");
+  inputSection.style.display = "none";
   const linkContainer = document.getElementById("generatedLinkContainer");
   const linkInput = document.getElementById("generatedLink");
   linkContainer.style.display = "block";

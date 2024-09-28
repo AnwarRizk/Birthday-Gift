@@ -17,26 +17,35 @@
     <h1>Birthday Gift 🙈</h1>
 
     <form class="form-container" id="birthdayForm">
-      <label for="friendName">Enter your friend's name:</label>
-      <input
-        type="text"
-        name="friendName"
-        id="friendName"
-        placeholder="Your friend's name"
-        required
-      />
+      <section class="input-section">
+        <label for="friendName">Enter your friend's name:</label>
+        <input
+          type="text"
+          name="friendName"
+          id="friendName"
+          placeholder="Your friend's name"
+          maxlength="30"
+          required
+        />
 
-      <label for="friendImage">Upload your friend's image:</label>
-      <input type="file" name="friendImage" id="friendImage" required />
+        <label for="friendImage">Upload your friend's image:</label>
+        <input type="file" name="friendImage" id="friendImage" required />
 
-      <label for="senderName">Enter your name:</label>
-      <input
-        type="text"
-        name="senderName"
-        id="senderName"
-        placeholder="Your name"
-        required
-      />
+        <label for="message">Enter a message for your friend:</label>
+        <textarea name="message" id="message" maxlength="1000" required>
+I wish you a year full of joy, happiness, and success. May all your wishes come true. Happy Birthday! 🎉</textarea
+        >
+
+        <label for="senderName">Enter your name:</label>
+        <input
+          type="text"
+          name="senderName"
+          id="senderName"
+          placeholder="Your name"
+          maxlength="30"
+          required
+        />
+      </section>
 
       <button type="submit">Generate Link 🚀</button>
 

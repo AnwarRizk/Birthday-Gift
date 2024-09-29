@@ -85,3 +85,108 @@ a {
   text-decoration: underline;
   color: #434344fc;
 }
+
+/* General Styles for Desktop and Larger Screens */
+body {
+  height: 100%;
+  font-family: Arial;
+  text-align: center;
+  background: rgb(1, 65, 85);
+  background-image: radial-gradient(
+    circle at center bottom,
+    #e9b64b,
+    #c76075 15%,
+    #0d0d4b 75%,
+    #190e14 90%
+  );
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.happy-birthday {
+  font-family: "Kaushan Script", cursive;
+  color: white;
+  font-size: 40px;
+}
+
+.birthday-image {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.birthday-message {
+  width: 500px;
+  font-family: "Playpen Sans", sans-serif;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.from-sender {
+  font-family: "Kaushan Script", cursive;
+  margin-top: 5px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.send-your-gift {
+  background: #34495e;
+  color: #fff;
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  text-decoration: none;
+  font-family: "Rubik Wet Paint", sans-serif;
+}
+
+.send-your-gift:hover {
+  background: #2c3e50;
+}
+
+.copyright {
+  margin-top: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Media Queries for Mobile Screens */
+@media screen and (max-width: 420px) {
+  .happy-birthday {
+    font-size: 28px;
+  }
+
+  .birthday-image {
+    width: 150px;
+  }
+
+  .birthday-message {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .from-sender {
+    font-size: 16px;
+  }
+
+  .send-your-gift {
+    width: 150px;
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}

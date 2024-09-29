@@ -28,7 +28,7 @@ window.onload = async function () {
     const data = await response.json();
     const { friendName, senderName, message, imageUrl } = data.data;
 
-    const happyBirthday = `Happy Birthday, ${friendName}  🎊🎉`;
+    const happyBirthday = `Happy Birthday, ${friendName} 🎉`;
 
     document.getElementById("happyBirthday").textContent = happyBirthday;
     document.getElementById("birthdayMessage").textContent = message;

@@ -190,3 +190,13 @@ body {
     font-size: 14px;
   }
 }
+
+#fireworksCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allow clicks to pass through the canvas */
+  z-index: -1; /* Ensure the fireworks are behind the content */
+}

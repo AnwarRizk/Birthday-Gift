@@ -52,7 +52,7 @@ function disableGenerateLinkButton() {
   const generateButton = document.querySelector("button[type=submit]");
   generateButton.disabled = true;
   generateButton.textContent = "Link Generated! 🎉";
-  generateButton.style.backgroundColor = "#4CAF50";
+  generateButton.style.background = "#5cb85c"; // Change button color
   generateButton.style.cursor = "default";
 }
 

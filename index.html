@@ -29,7 +29,13 @@
         />
 
         <label for="friendImage">Upload your friend's image:</label>
-        <input type="file" name="friendImage" id="friendImage" required />
+        <input
+          type="file"
+          name="friendImage"
+          id="friendImage"
+          required
+          accept="image/*"
+        />
 
         <label for="message">Enter a message for your friend:</label>
         <textarea name="message" id="message" maxlength="1000" required>

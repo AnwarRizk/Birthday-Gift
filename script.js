@@ -49,7 +49,9 @@ function displayBirthdayDetails({ friendName, senderName, message, imageUrl }) {
 
 // Display Error Message
 function displayError(message) {
+  // Display the error message on the page with white text color
   document.body.innerHTML = `<h2>${message}</h2>`;
+  document.body.style.color = "white";
 }
 
 // Initialize Fireworks Animation

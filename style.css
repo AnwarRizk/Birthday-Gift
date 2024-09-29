@@ -7,7 +7,7 @@ body {
   height: 100%;
   font-family: Arial;
   text-align: center;
-  background: rgb(1, 65, 85);
+  /* background: rgb(1, 65, 85); */
   background-image: radial-gradient(
     circle at center bottom,
     #e9b64b,
@@ -29,13 +29,14 @@ body {
 }
 
 .happy-birthday {
+  margin-top: 0;
   font-family: "Kaushan Script", cursive;
   color: white;
   font-size: 40px;
 }
 
 .birthday-image {
-  width: 200px;
+  width: 300px;
   border-radius: 50%;
 }
 
@@ -74,9 +75,9 @@ body {
 }
 
 .copyright {
-  margin-top: 50px;
+  margin-top: 20px;
   font-family: "Courier New", Courier, monospace;
-  font-size: 15px;
+  font-size: 12px;
   color: #000000;
   font-weight: bold;
 }
@@ -93,7 +94,7 @@ a {
   }
 
   .birthday-image {
-    width: 150px;
+    width: 250px;
   }
 
   .birthday-message {
@@ -105,7 +106,7 @@ a {
     font-size: 16px;
   }
 
-  .send-your-gift {
+  .try-it-now {
     width: 150px;
     padding: 8px 15px;
     font-size: 14px;

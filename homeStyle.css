@@ -2,10 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
 
 body {
-  min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+  height: 100%;
   font-family: Arial, sans-serif;
   text-align: center;
-  margin: 0; /* Remove any default margins */
   background-image: radial-gradient(
     circle at center bottom,
     #e9b64b,
@@ -14,8 +13,10 @@ body {
     #190e14 90%
   );
   background-size: cover; /* Ensure the background image covers the entire body */
-  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Prevent the background from scrolling */
   background-repeat: no-repeat; /* Prevent the background from repeating */
+  margin: 0; /* Remove any default margins */
+  padding: 0; /* Remove any default padding */
 }
 
 h1 {

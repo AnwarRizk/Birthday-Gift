@@ -11,7 +11,7 @@ window.onload = async function () {
 async function fetchBirthdayDetails() {
   // Extract the ID from the URL or use a fallback ID
   const urlParams = new URLSearchParams(window.location.search);
-  const id = urlParams.get("id") || "f99cd47b-a1ef-43e8-9d8b-c7f4a27efa77";
+  const id = urlParams.get("id") || "145ed25c-4e1e-44da-b24a-ca5b8a36dcbb";
 
   if (!id || id === "undefined") {
     displayError("Invalid birthday details!");

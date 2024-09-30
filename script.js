@@ -11,7 +11,7 @@ window.onload = async function () {
 async function fetchBirthdayDetails() {
   // Extract the ID from the URL or use a fallback ID
   const urlParams = new URLSearchParams(window.location.search);
-  const id = urlParams.get("id") || "205c90b3-326d-43dc-a009-aea0ac0d025c";
+  const id = urlParams.get("id") || "f99cd47b-a1ef-43e8-9d8b-c7f4a27efa77";
 
   if (!id || id === "undefined") {
     displayError("Invalid birthday details!");
@@ -42,7 +42,7 @@ function displayBirthdayDetails({ friendName, senderName, message, imageUrl }) {
   document.getElementById("birthdayMessage").textContent = message;
   document.querySelector(".sender").textContent = senderName;
 
-  console.log(imageUrl);
+  //   console.log(imageUrl);
 
   // Modify the image URL to insert f_auto/q_auto/ after "upload/"
   if (imageUrl && imageUrl.includes("upload/")) {
@@ -50,6 +50,7 @@ function displayBirthdayDetails({ friendName, senderName, message, imageUrl }) {
       "/upload/",
       "/upload/f_auto/q_auto/"
     );
+
     document.getElementById("birthdayImage").src = updatedImageUrl;
   } else {
     // Set default image if imageUrl is not provided or malformed

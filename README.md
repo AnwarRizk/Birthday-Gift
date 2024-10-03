@@ -1,8 +1,9 @@
-# Birthday Greeting Page
+# Birthday Gift
 
 A responsive, interactive birthday greeting page where users can enter their friend's name, upload an image, and display a personalized birthday message with fireworks animation. It is designed to be mobile-friendly and allows users to share the message via a generated link.
 
 **Live Demo:** [Birthday Gift](https://friend-birthday-gift.vercel.app/)
+**API Repo:** [Birthday Gift API](https://github.com/AnwarRizk/Birthday-gift-API)
 
 ## Table of Contents
 

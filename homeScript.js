@@ -67,6 +67,11 @@ function resetGenerateLinkButton() {
 
 // Function to display the generated link
 function displayGeneratedLink(link) {
+  // Move to the middle of the page
+  const formContainer = document.querySelector(".form-container");
+  formContainer.style.marginTop = "8vh";
+
+  // Hide the input section and display the generated link
   const inputSection = document.querySelector(".input-section");
   inputSection.style.display = "none";
   const linkContainer = document.getElementById("generatedLinkContainer");

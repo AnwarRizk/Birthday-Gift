@@ -23,6 +23,7 @@ h1 {
   color: #ffffff;
   margin-top: 20px;
   font-size: 40px;
+  margin-top: 30px;
 }
 
 .form-container {
@@ -40,6 +41,8 @@ label {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: left;
+  margin-left: 11%;
 }
 
 input[type="text"],
@@ -80,7 +83,7 @@ textarea {
 
 button {
   display: inline-block;
-  background: linear-gradient(45deg, #0cb4e7ec, #43565f);
+  background: linear-gradient(45deg, #0cb4e7ec, #77a9c0);
   color: #ffffff;
   margin-top: 20px;
   padding: 10px 20px;
@@ -92,10 +95,11 @@ button {
   cursor: pointer;
   margin-right: 20px;
   margin-left: 20px;
+  margin-bottom: 15px;
 }
 
 button:hover {
-  background: linear-gradient(45deg, #43565f, #0cb4e7ec);
+  background: linear-gradient(45deg, #77a9c0, #0cb4e7ec);
 }
 
 .button-group {
@@ -106,6 +110,7 @@ button:hover {
 #whatsapp {
   display: none;
   margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 40px;
   font-weight: 600;
   color: #ffffff;
@@ -207,7 +212,7 @@ a {
   }
 
   .form-container {
-    width: 90%;
+    width: 80%;
   }
 
   input[type="text"],
@@ -216,12 +221,25 @@ a {
     width: 90%;
   }
 
+  label {
+    font-size: 18px;
+    margin-left: 4%;
+  }
+
   #generatedLink {
     width: 90%;
   }
 
   .share-note {
     width: 90%;
+  }
+
+  .button-group button {
+    width: 100%;
+    font-size: 16px;
+    margin: 10px 0;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   #whatsapp {
@@ -231,23 +249,28 @@ a {
 
 @media (max-width: 420px) {
   h1 {
-    font-size: 20px;
+    font-size: 28px;
   }
 
   .form-container {
-    width: 95%;
+    width: 80%;
     padding: 5px;
   }
 
   input[type="text"],
   input[type="file"],
   textarea {
-    width: 95%;
+    width: 80%;
     font-size: 14px;
   }
 
+  label {
+    margin-left: 9%;
+    font-size: 16px;
+  }
+
   #generatedLink {
-    width: 95%;
+    width: 80%;
     font-size: 14px;
   }
 
@@ -255,6 +278,8 @@ a {
     width: 100%;
     font-size: 14px;
     margin: 10px 0;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   #whatsapp {
@@ -263,7 +288,7 @@ a {
   }
 
   .share-note {
-    width: 95%;
+    width: 80%;
     font-size: 16px;
   }
 }

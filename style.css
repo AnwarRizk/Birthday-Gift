@@ -290,11 +290,12 @@ body::before {
 }
 
 #birthdayMessage {
-  font-family: 'Dancing Script', cursive;
-  font-size: 28px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
   color: var(--light);
-  line-height: 1.6;
+  line-height: 1.8;
   text-shadow: 1px 3px 8px rgba(0, 0, 0, 0.3);
+  font-weight: 400;
 }
 
 .from-section {
@@ -364,11 +365,8 @@ body::before {
 }
 
 .copyright {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
+  text-align: center;
+  padding: 30px 20px;
 }
 
 .copyright p {
@@ -428,7 +426,7 @@ body::before {
   }
   
   #birthdayMessage {
-    font-size: 22px;
+    font-size: 18px;
   }
   
   #birthdayImage {

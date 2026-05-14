@@ -34,6 +34,15 @@ function suggestRandomMessage() {
 
 document.getElementById("suggestMessageBtn").addEventListener("click", suggestRandomMessage);
 
+document.getElementById("friendImage").addEventListener("change", function() {
+  const fileName = document.getElementById("fileName");
+  if (this.files.length > 0) {
+    fileName.textContent = this.files[0].name;
+  } else {
+    fileName.textContent = "";
+  }
+});
+
 async function handleFormSubmission(event) {
   event.preventDefault();
   const formData = new FormData(this);

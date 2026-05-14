@@ -36,7 +36,7 @@ function displayBirthdayDetails({ friendName, senderName, message, imageUrl }) {
     const updatedImageUrl = imageUrl.replace("/upload/", "/upload/f_auto/q_auto/");
     document.getElementById("birthdayImage").src = updatedImageUrl;
   } else {
-    document.getElementById("birthdayImage").src = "/images/default-image.gif";
+    document.getElementById("birthdayImage").src = "/images/default-image.svg";
   }
 }
 

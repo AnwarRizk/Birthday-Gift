@@ -34,9 +34,10 @@ A responsive, interactive birthday greeting page where users can enter their fri
 
 ## Screenshots
 
-![Birthday Gift form screen](https://github.com/user-attachments/assets/51092220-a388-4d31-8978-6d5e2397e310)
-
-![Birthday Gift message screen](https://github.com/user-attachments/assets/92c27a71-b8be-4c38-8f4e-cf1e2346a7eb)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/51092220-a388-4d31-8978-6d5e2397e310" alt="Birthday Gift form screen" width="360">
+  <img src="https://github.com/user-attachments/assets/92c27a71-b8be-4c38-8f4e-cf1e2346a7eb" alt="Birthday Gift message screen" width="360">
+</p>
 
 ## Technologies
 

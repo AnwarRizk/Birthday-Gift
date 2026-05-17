@@ -10,6 +10,7 @@ A responsive, interactive birthday greeting page where users can enter their fri
 
 - [Features](#features)
 - [Usage](#usage)
+- [Screenshots](#screenshots)
 - [Technologies](#technologies)
 - [Responsive Design](#responsive-design)
 
@@ -30,6 +31,12 @@ A responsive, interactive birthday greeting page where users can enter their fri
 4. Click "Generate Link" to create a shareable link to the birthday message page.
 5. You can share the greeting via WhatsApp using the "Share via WhatsApp" button.
 6. Enjoy the animated fireworks in the background!
+
+## Screenshots
+
+![Birthday Gift form screen](https://github.com/user-attachments/assets/51092220-a388-4d31-8978-6d5e2397e310)
+
+![Birthday Gift message screen](https://github.com/user-attachments/assets/92c27a71-b8be-4c38-8f4e-cf1e2346a7eb)
 
 ## Technologies
 
